@@ -1,0 +1,50 @@
+{
+  "name": "servidor-nodejs-ts-videollamada-app",
+  "version": "1.0.0",
+  "description": "Servidor de nodeJS hecho con typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=desarrollo nodemon src/index",
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=produccion node dist/src/index",
+    "heroku-postbuild" : "npm run build"
+  },
+  "engines" : {
+    "node" : "12.14.x",
+    "npm" : "6.14.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/socket.io": "^2.1.4",
+    "atob": "^2.1.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.13",
+    "mongoose-unique-validator": "^2.0.3",
+    "multer": "^1.4.2",
+    "socket.io": "^2.3.0",
+    "uuidv4": "^6.0.8"
+  },
+  "devDependencies": {
+    "@types/atob": "^2.1.2",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.6",
+    "@types/helmet": "0.0.47",
+    "@types/jsonwebtoken": "^8.3.9",
+    "@types/mongoose": "^5.7.19",
+    "@types/mongoose-unique-validator": "^1.0.4",
+    "@types/multer": "^1.4.3",
+    "@types/uuidv4": "^5.0.0",
+    "chalk": "^4.0.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
+  }
+}
