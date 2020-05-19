@@ -1,5 +1,5 @@
 {
-  "name": "servidor-nodejs-ts-videollamada-app",
+  "name": "server-videollamada-app",
   "version": "1.0.0",
   "description": "Servidor de nodeJS hecho con typescript",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=desarrollo nodemon src/index",
     "build": "tsc",
-    "start": "cross-env NODE_ENV=produccion node dist/src/index"
+    "start": "cross-env NODE_ENV=produccion npm run build && node dist/src/index"
   },
   "engines" : {
     "node" : "12.14.x",
