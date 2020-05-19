@@ -4,7 +4,6 @@
   "description": "Servidor de nodeJS hecho con typescript",
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild" : "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=desarrollo nodemon src/index",
     "build": "tsc",
