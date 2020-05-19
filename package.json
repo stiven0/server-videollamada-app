@@ -4,10 +4,11 @@
   "description": "Servidor de nodeJS hecho con typescript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=desarrollo nodemon src/index",
     "build": "tsc",
-    "start": "cross-env NODE_ENV=produccion npm run build && node dist/src/index"
+    "postinstall": "npm run build",
+    "start": "npm run serve",
+    "serve": "node dist/src/server.js",
   },
   "engines" : {
     "node" : "12.14.0",
