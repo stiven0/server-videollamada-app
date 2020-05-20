@@ -23,6 +23,6 @@
   });
 
   // rutas en si
-  app.use('/api', routesPrincipal);
+  app.use(routesPrincipal);
 
   export default app;
