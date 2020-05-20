@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "heroku-postbuild" : "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_ENV=desarrollo nodemon src/index",
-    "start": "cross-env NODE_ENV=produccion node dist/src/index",
+    "postinstall": "npm run build",
+    "start": "npm run serve",
+    "serve": "node dist/server.js"
   },
   "engines" : {
     "node" : "12.14.0",
