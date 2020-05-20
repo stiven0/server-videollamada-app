@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "cross-env NODE_ENV=desarrollo nodemon src/index.js",
-    "start": "cross-env NODE_ENV=produccion node dist/src/index.js",
+    "start": "cross-env NODE_ENV=produccion node dist/index.js",
   },
   "engines" : {
     "node" : "12.14.0",
