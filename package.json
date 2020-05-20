@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon src/index.js",
-    "start": "node dist/src/index.js"
+    "dev": "cross-env NODE_ENV=desarrollo nodemon src/index.ts",
+    "start": "cross-env NODE_ENV=produccion node dist/src/index.js"
   },
   "engines" : {
-    "node" : "12.14.0",
-    "npm" : "6.14.4"
+    "node" : "12.x",
+    "npm" : "6.x"
   },
   "keywords": [],
   "author": "",
